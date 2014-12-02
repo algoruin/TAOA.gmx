@@ -18,6 +18,10 @@
       </sprites>
     </sprites>
     <sprite>sprites\sprEnemy</sprite>
+    <sprites name="combat">
+      <sprite>sprites\sprHpBar</sprite>
+      <sprite>sprites\sprSkills</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bgStreet</background>
