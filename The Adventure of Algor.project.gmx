@@ -15,12 +15,18 @@
       </sprites>
       <sprites name="combat">
         <sprite>sprites\sprPlayerIdle</sprite>
+        <sprite>sprites\sprWarriorBasic</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprEnemy</sprite>
     <sprites name="combat">
       <sprite>sprites\sprHpBar</sprite>
       <sprite>sprites\sprSkills</sprite>
+    </sprites>
+    <sprites name="enemy">
+      <sprite>sprites\sprEnemy</sprite>
+      <sprites name="combat">
+        <sprite>sprites\sprEnemyBasic</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -29,6 +35,15 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\createCombat.gml</script>
+    <scripts name="combat">
+      <script>scripts\basicAttack.gml</script>
+      <script>scripts\yourTurn.gml</script>
+      <script>scripts\yourTurnDraw.gml</script>
+      <scripts name="enemy">
+        <script>scripts\enemyTurn.gml</script>
+      </scripts>
+      <script>scripts\createVariables.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <objects name="ingame">
@@ -38,8 +53,23 @@
     <objects name="incombat">
       <object>objects\objPlayerCombat</object>
       <object>objects\objEnemyCombat</object>
+      <objects name="weapons">
+        <objects name="player">
+          <object>objects\objHammer</object>
+        </objects>
+        <objects name="enemy">
+          <object>objects\objEnemyHammer</object>
+        </objects>
+      </objects>
+      <object>objects\objCon</object>
     </objects>
   </objects>
+  <timelines name="timelines">
+    <timelines name="combat">
+      <timeline>timelines\tlBasicWarrior</timeline>
+      <timeline>timelines\tlBasicEnemy</timeline>
+    </timelines>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\rmMain</room>
     <room>rooms\rmCombat</room>
