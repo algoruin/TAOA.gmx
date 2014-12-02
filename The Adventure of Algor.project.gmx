@@ -16,6 +16,7 @@
       <sprites name="combat">
         <sprite>sprites\sprPlayerIdle</sprite>
         <sprite>sprites\sprWarriorBasic</sprite>
+        <sprite>sprites\sprFireball</sprite>
       </sprites>
     </sprites>
     <sprites name="combat">
@@ -56,9 +57,11 @@
       <objects name="weapons">
         <objects name="player">
           <object>objects\objHammer</object>
+          <object>objects\objFireball</object>
         </objects>
         <objects name="enemy">
           <object>objects\objEnemyHammer</object>
+          <object>objects\objEnemyFireball</object>
         </objects>
       </objects>
       <object>objects\objCon</object>
@@ -68,6 +71,7 @@
     <timelines name="combat">
       <timeline>timelines\tlBasicWarrior</timeline>
       <timeline>timelines\tlBasicEnemy</timeline>
+      <timeline>timelines\tlFireballWarrior</timeline>
     </timelines>
   </timelines>
   <rooms name="rooms">

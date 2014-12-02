@@ -14,7 +14,8 @@
 obj = noone;
 turn = "none";
 skills = ds_map_create();
-ds_map_add(skills, 0, "basic");</code>
+ds_map_add(skills, 0, "basic");
+ds_map_add(skills, 1, "fireball");</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
